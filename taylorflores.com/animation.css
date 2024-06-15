@@ -1,0 +1,23 @@
+body {
+    background-color: #343434;
+    min-height:100vh;
+    margin:0px;
+    display:block;
+}
+
+body {
+    /* @apply bg-slate-950; */
+}
+
+
+.particle {
+    filter: blur(1px);
+    position: fixed;
+    z-index: -1;
+    border-radius: 50%;
+    display:block;
+    transition: top 1.5s;
+    transition-timing-function: ease-in-out;
+}
+
+

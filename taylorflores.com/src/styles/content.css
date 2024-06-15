@@ -1,0 +1,16 @@
+.section-divider {
+    height:0px;
+    border: 1px white solid;
+    border-radius: 2px;
+}
+.mid-divider {
+    height:0px;
+    border-bottom: 1px white solid;
+    border-radius: 2px;
+}
+.content-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
