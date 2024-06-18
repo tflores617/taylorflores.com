@@ -14,13 +14,13 @@ let content = [
 
 export default function Content() {
     let formattedContent = content.map((section, index)=>{return (
-        <Element key={index} id={section.title} className='text-white pl-16 pr-16 w-3/4 mt-16 mb-16 content-wrapper' >
+        <Element key={index} id={section.title} className='text-white md:pl-16 md:pr-16 pl-7 pr-7 lg:w-3/4 mt-16 mb-16 content-wrapper text-sm' >
                 <h1 className='text-3xl mb-12'>{section.title}</h1>
                 <p className=' indent-8 text-xl'>{section.text}</p>
         </Element>
     )})
   return (
-    <Element id="wrapper" className='w-3/4 backdrop-blur-xl flex justify-normal flex-col items-center pt-8'>
+    <Element id="wrapper" className='lg:w-3/4 w-full backdrop-blur-xl flex justify-normal flex-col items-center pt-8'>
             {
                 formattedContent
             }
