@@ -20,7 +20,7 @@ export default function Content() {
         </Element>
     )})
   return (
-    <Element id="wrapper" className='lg:w-3/4 w-full backdrop-blur-xl flex justify-normal flex-col items-center pt-8'>
+    <Element id="wrapper" className='xl:w-3/4 w-full backdrop-blur-xl flex justify-normal flex-col items-center pt-8'>
             {
                 formattedContent
             }

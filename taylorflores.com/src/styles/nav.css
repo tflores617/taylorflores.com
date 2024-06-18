@@ -2,3 +2,13 @@
     /* lg and bigger */
     @apply flex justify-between items-center min-h-16 backdrop-blur-sm w-full sticky top-0 z-20 flex-wrap md:flex-nowrap;
  }
+
+ #navMenu {
+    position:fixed;
+    right:0;
+    top:0;
+    height:100vh;
+ }
+ .nav * {
+    transition: flex .7s;
+ }

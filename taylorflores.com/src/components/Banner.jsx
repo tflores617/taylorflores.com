@@ -3,7 +3,7 @@ import './../styles/banner.css'
 // const ScrollLink = Scroll.ScrollLink
 export default function Banner() {
     return (
-        <div className='banner w-full pb-40 flex flex-col-reverse justify-start items-center'>
+        <div className='banner w-full pb-40 flex flex-col-reverse justify-start items-center '>
             <Link
                 to="wrapper"
                 spy={true}
