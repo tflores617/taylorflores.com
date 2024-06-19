@@ -12,7 +12,7 @@ let content = [
     }
 ]
 
-export default function Content() {
+export default function Content({mobileNavIsOpen}) {
     let formattedContent = content.map((section, index)=>{return (
         <Element key={index} id={section.title} className='text-white md:pl-16 md:pr-16 pl-7 pr-7 lg:w-3/4 mt-16 mb-16 content-wrapper text-sm' >
                 <h1 className='text-3xl mb-12'>{section.title}</h1>
@@ -20,7 +20,7 @@ export default function Content() {
         </Element>
     )})
   return (
-    <Element id="wrapper" className='xl:w-3/4 w-full backdrop-blur-xl flex justify-normal flex-col items-center pt-8'>
+    <Element id="wrapper" className={`xl:w-3/4 w-full backdrop-blur-xl flex justify-normal flex-col items-center transition-all duration-700 pt-8 ${(mobileNavIsOpen)?'opacity-0':'opacity-100'}`}>
             {
                 formattedContent
             }

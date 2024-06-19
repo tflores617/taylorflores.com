@@ -7,3 +7,21 @@ body {
     background-color: #343434;
     scroll-behavior: smooth;
 }
+*{
+    font-family: 'consola';
+    font-weight: lighter;
+}
+
+
+@font-face {
+    font-family: 'cmu-typewriter-light';
+    src: url('./assets/cmunbtl.ttf');
+  }
+@font-face {
+    font-family: 'cmu-typewriter-reg';
+    src: url('./assets/cmuntt.ttf');
+}
+@font-face {
+    font-family: 'consola';
+    src: url('./assets/CONSOLA.TTF');
+}

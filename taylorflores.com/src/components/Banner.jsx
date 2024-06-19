@@ -1,9 +1,9 @@
 import { Link } from 'react-scroll'
 import './../styles/banner.css'
 // const ScrollLink = Scroll.ScrollLink
-export default function Banner() {
+export default function Banner({mobileNavIsOpen}) {
     return (
-        <div className='banner w-full pb-40 flex flex-col-reverse justify-start items-center '>
+        <div className={`banner w-full pb-40 flex flex-col-reverse justify-start items-center transition-all duration-700 ${(mobileNavIsOpen)?'opacity-0':'opacity-100'}`}>
             <Link
                 to="wrapper"
                 spy={true}

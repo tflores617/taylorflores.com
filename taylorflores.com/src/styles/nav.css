@@ -1,6 +1,6 @@
  .nav {
     /* lg and bigger */
-    @apply flex justify-between items-center min-h-16 backdrop-blur-sm w-full sticky top-0 z-20 flex-wrap md:flex-nowrap;
+    @apply flex justify-between items-center min-h-16 max-h-16 backdrop-blur-sm w-full sticky top-0 z-20 flex-wrap md:flex-nowrap;
  }
 
  #navMenu {
