@@ -1,14 +1,19 @@
-import React from 'react'
+import { Link } from 'react-scroll'
 import './../styles/banner.css'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-export default function Banner() {
-  return (
-        <div className='banner w-full pb-40 flex flex-col-reverse justify-start items-center'>
-            <button id='bannerButton' className=' w-96 h-20 flex prl-16 justify-center items center'>
-                <div className='h-16 w-16 rotate-45 border-b-2 border-r-2'>
-                </div>
-            </button>
+// const ScrollLink = Scroll.ScrollLink
+export default function Banner({mobileNavIsOpen}) {
+    return (
+        <div className={`banner w-full pb-40 flex flex-col-reverse justify-start items-center transition-all duration-700 ${(mobileNavIsOpen)?'opacity-0':'opacity-100'}`}>
+            <Link
+                to="wrapper"
+                spy={true}
+                smooth={true}
+                duration={1000}
+                className=' w-96 h-20 flex prl-16 justify-center items center hover:cursor-pointer'
+                activeClass=''
+            >
+                <div className='h-16 w-16 rotate-45 border-b-2 border-r-2'></div>
+            </Link>
         </div>
-  )
+    )
 }
