@@ -4,7 +4,9 @@ import Content from './components/Content'
 import Banner from './components/Banner'
 import './index.css'
 import { Route, Routes } from 'react-router-dom'
+import useBackgroundAnimation from './hooks/backgroundAnimation'
 function App() {
+    const animation = useBackgroundAnimation();
     const [mobileNavIsOpen, changeMobileNavStatus] = useState(false)
     const toggleMobileNav = () => {
         if (mobileNavIsOpen) {

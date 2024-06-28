@@ -7,11 +7,18 @@
     <link rel="stylesheet" type="text/css" href="animation.css">
     <title>Taylor Flores</title>
   </head>
-  <body onload="start()">
+  <body onload="">
     <div id="root" onload="setOnClicks()"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script src="backgroundAnimation.js"></script>
-    <script src="extraAnimations.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZZVGD6JWQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8ZZVGD6JWQ');
+    </script>
 
   </body>
 </html>
