@@ -5,11 +5,6 @@ body {
     display:block;
 }
 
-body {
-    /* @apply bg-slate-950; */
-}
-
-
 .particle {
     filter: blur(1px);
     position: fixed;
