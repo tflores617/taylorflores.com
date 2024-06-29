@@ -13,15 +13,15 @@ body {
 }
 
 
-@font-face {
+/* @font-face {
     font-family: 'cmu-typewriter-light';
     src: url('./assets/cmunbtl.ttf');
   }
 @font-face {
     font-family: 'cmu-typewriter-reg';
     src: url('./assets/cmuntt.ttf');
-}
+} */
 @font-face {
     font-family: 'consola';
-    src: url('./assets/CONSOLA.TTF');
+    src: url('./../assets/CONSOLA.TTF');
 }

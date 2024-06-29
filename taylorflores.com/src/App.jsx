@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import Nav from './components/Nav'
-import Content from './pages/Content'
 import Banner from './components/Banner'
-import './index.css'
+import './styles/index.css'
 import { Route, Routes } from 'react-router-dom'
 import useBackgroundAnimation from './hooks/backgroundAnimation'
 import Wrapper from './components/Wrapper'
@@ -10,7 +9,7 @@ import Contact from './pages/Contact'
 import Work from './pages/Work'
 import About from './pages/About'
 import Home from './pages/Home'
-import TopSpacer from './components/TopSpacer'
+import VerticalSpacer from './components/VerticalSpacer'
 
 
 function App() {
@@ -30,44 +29,50 @@ function App() {
         <div className='w-full flex flex-col items-center justify-start'>
             <Nav toggleMobileNav={toggleMobileNav} mobileNavIsOpen={mobileNavIsOpen} />
 
-            <Wrapper>
 
-                <Routes>
-                    <Route path='/'>
+            <Routes>
+                <Route path='/'>
 
-                        <Route index element={
-                            <>
-                                <Banner mobileNavIsOpen={mobileNavIsOpen} />
+                    <Route index element={
+                        <>
+                            <Banner mobileNavIsOpen={mobileNavIsOpen} />
+                            <Wrapper>
                                 <Home />
-                            </>
-                        }></Route>
+                            </Wrapper>
+                        </>
+                    }></Route>
 
-                        <Route path='contact' element={
-                            <>
-                                <TopSpacer />
+                    <Route path='contact' element={
+                        <>
+                            <VerticalSpacer />
+                            <Wrapper>
                                 <Contact />
-                            </>
-                        }>
-                        </Route>
-
-                        <Route path='work' element={
-                            <>
-                                <TopSpacer />
-                                <Work />
-                            </>
-                        }>
-                        </Route>
-
-                        <Route path='about' element={
-                            <>
-                                <TopSpacer />
-                                <About />
-                            </>
-                        }>
-                        </Route>
+                            </Wrapper>
+                        </>
+                    }>
                     </Route>
-                </Routes>
-            </Wrapper>
+
+                    <Route path='work' element={
+                        <>
+                            <VerticalSpacer />
+                            <Wrapper>
+                                <Work />
+                            </Wrapper>
+                        </>
+                    }>
+                    </Route>
+
+                    <Route path='about' element={
+                        <>
+                            <VerticalSpacer />
+                            <Wrapper>
+                                <About />
+                            </Wrapper>
+                        </>
+                    }>
+                    </Route>
+                </Route>
+            </Routes>
         </div>
     )
 }
