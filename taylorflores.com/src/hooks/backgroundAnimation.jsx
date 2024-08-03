@@ -84,7 +84,7 @@ export default function useBackgroundAnimation() {
             const bodyHeight = document.body.clientHeight
             const bodyWidth = document.body.clientWidth
             let area = bodyWidth * bodyHeight
-            let amount = Math.floor(area / 20 ** 3)
+            let amount = Math.floor(area / 25 ** 3)
             for (let i = 0; i < amount; i++) {
                 particleArray.push(new Particle(bodyWidth, bodyHeight))
             }
@@ -119,6 +119,7 @@ export default function useBackgroundAnimation() {
         //start function runs on window load
         addEventListener('load', () => {
             start();
+            console.log( 'background animation loaded')
         });
 
     });

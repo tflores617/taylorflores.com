@@ -36,12 +36,12 @@ export default function WorkSection({
                     {
                         (codeLink === '') ?
                             <></> :
-                            <a className=' pt-1 pb-1 w-full border-solid border-[1px] rounded-md text-center border-[#565656] text-[#999999] mb-2' href={codeLink}>
+                            <a className=' pt-1 pb-1 w-full border-solid border-[1px] rounded-md text-center border-[#565656] text-[#999999] mb-2' href={codeLink} target='_blank'>
                                 <FontAwesomeIcon icon={faGithub} className='mr-3 text-sm' />
                                 view code
                             </a>
                     }
-                    <a className=' pt-1 pb-1 w-full border-solid border-[1px] rounded-md text-center border-[#565656] text-[#999999]' href={siteLink}>
+                    <a className=' pt-1 pb-1 w-full border-solid border-[1px] rounded-md text-center border-[#565656] text-[#999999]' href={siteLink} target='_blank'>
                         <FontAwesomeIcon icon={faLink} className='mr-3 text-md' />
                         view site
                     </a>

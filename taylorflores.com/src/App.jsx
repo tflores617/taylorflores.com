@@ -28,7 +28,7 @@ function App() {
         <div className='w-full flex flex-col items-center justify-start'>
             <Nav toggleMobileNav={toggleMobileNav} mobileNavIsOpen={mobileNavIsOpen} />
 
-
+            
             <Routes>
                 <Route path='/'>
 

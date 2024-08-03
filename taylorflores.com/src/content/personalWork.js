@@ -1,17 +1,18 @@
 export default [
     {
-        img: "site-test2.png",
-        title: "zerotimesystem.com",
-        description: "This was my first contract site. ",
-        timeWorkedOn: "(2018-2019)",
+        img: "This Site",
+        title: "taylorflores.com",
+        description: "This site was built from the ground up using React and Tailwind CSS. It is hosted on my own Digital Ocean server and the code is available on GitHub.",
+        timeWorkedOn: "(2024)",
+        img: "site.png",
         toolsUsed: [
             'HTML',
             'CSS',
             'JavaScript',
-            'PHP',
-            'Apache'
+            'React',
+            'Nginx'
         ],
-        codeLink: "https://github.com/tflores617/zerotimesystem.com",
-        siteLink: "",
+        codeLink: "https://github.com/tflores617/taylorflores.com",
+        siteLink: "https://taylorflores.com",
     },
 ]

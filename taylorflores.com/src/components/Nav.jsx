@@ -31,12 +31,12 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                         ABOUT
                     </Link>
 
-                    <Link
+                    {/* <Link
                         to="contact"
                         className='hover:cursor-pointer overflow-hidden'
                     >
                         CONTACT
-                    </Link>
+                    </Link> */}
                     <Link
                         to="/"
                         className='hover:cursor-pointer overflow-hidden'

@@ -8,6 +8,9 @@ export default function Banner({mobileNavIsOpen}) {
                 to="wrapper"
                 className=' w-96 h-20 flex prl-16 justify-center items center hover:cursor-pointer'
                 activeClass=''
+                smooth={true}
+                duration={1000}
+                offset={-100}
             >
                 <div className='h-16 w-16 rotate-45 border-b-2 border-r-2'></div>
             </ScrollLink>
