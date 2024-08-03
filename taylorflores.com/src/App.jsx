@@ -13,8 +13,7 @@ import VerticalSpacer from './components/VerticalSpacer'
 
 
 function App() {
-
-    useBackgroundAnimation();
+    const animation = useBackgroundAnimation();
     const [mobileNavIsOpen, changeMobileNavStatus] = useState(false)
     const toggleMobileNav = () => {
         if (mobileNavIsOpen) {

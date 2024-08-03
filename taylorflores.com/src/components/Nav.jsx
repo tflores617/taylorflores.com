@@ -21,14 +21,12 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                     <Link
                         to="work"
                         className='hover:cursor-pointer'
-                        activeClass=''
                     >
                         WORK
                     </Link>
                     <Link
                         to="/about"
                         className='hover:cursor-pointer'
-                        activeClass=''
                     >
                         ABOUT
                     </Link>
@@ -36,14 +34,12 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                     <Link
                         to="contact"
                         className='hover:cursor-pointer overflow-hidden'
-                        activeClass=''
                     >
                         CONTACT
                     </Link>
                     <Link
                         to="/"
                         className='hover:cursor-pointer overflow-hidden'
-                        activeClass=''
                     >
                         HOME
                     </Link>
@@ -63,7 +59,6 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                 <Link
                     to="work"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    activeClass=''
                     onClick={toggleMobileNav}
                 >
                     <span className="content-wrapper">MY WORK</span>
@@ -72,7 +67,6 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                 <Link
                     to="about"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    activeClass=''
                     onClick={toggleMobileNav}
                 >
                     <span className="content-wrapper">ABOUT ME</span>
@@ -80,7 +74,6 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                 <Link
                     to="contact"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    activeClass=''
                     onClick={toggleMobileNav}
                 >
                     <span className="content-wrapper">CONTACT ME</span>
@@ -88,7 +81,7 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                 <Link
                     to="/"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    activeClass='' onClick={toggleMobileNav}
+                    onClick={toggleMobileNav}
                 >
                     <span className="content-wrapper">HOME</span>
 

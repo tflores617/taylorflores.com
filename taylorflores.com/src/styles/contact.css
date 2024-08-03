@@ -1,0 +1,13 @@
+form > *{
+    max-width:20%;
+}
+form > label {
+    @apply text-white;
+    
+}
+option:before {
+    font-family: 'consola';
+}
+input, .select, select, textarea {
+    @apply mb-8;
+}
