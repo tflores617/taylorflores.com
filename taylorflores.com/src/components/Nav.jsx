@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import './../styles/nav.css'
 import { useState } from "react"
+import { animateScroll } from 'react-scroll';
 
 export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
     const navigate = useNavigate();
@@ -21,25 +22,29 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                     <Link
                         to="work"
                         className='hover:cursor-pointer'
+                    onClick={() => { animateScroll.scrollToTop({duration: 1000, smooth:true}) }}
                     >
                         WORK
                     </Link>
                     <Link
                         to="/about"
                         className='hover:cursor-pointer'
-                    >
+                        onClick={() => { animateScroll.scrollToTop({duration: 1000, smooth:true}) }}
+                        >
                         ABOUT
+                        
                     </Link>
 
                     {/* <Link
                         to="contact"
                         className='hover:cursor-pointer overflow-hidden'
-                    >
+                        >
                         CONTACT
-                    </Link> */}
+                        </Link> */}
                     <Link
                         to="/"
                         className='hover:cursor-pointer overflow-hidden'
+                        onClick={() => { animateScroll.scrollToTop({duration: 0, smooth:false}) }}
                     >
                         HOME
                     </Link>
