@@ -14,3 +14,8 @@
     align-items: center;
     flex-direction: column;
 }
+
+.text-link {
+    color:#898989;
+    text-decoration: underline;
+}
