@@ -35,7 +35,7 @@ function App() {
                     <Route index element={
                         <>
                             <Banner mobileNavIsOpen={mobileNavIsOpen} />
-                            <Wrapper>
+                            <Wrapper mobileNavIsOpen={mobileNavIsOpen}>
                                 <Home />
                             </Wrapper>
                         </>
@@ -44,7 +44,7 @@ function App() {
                     <Route path='contact' element={
                         <>
                             <VerticalSpacer />
-                            <Wrapper>
+                            <Wrapper mobileNavIsOpen={mobileNavIsOpen}>
                                 <Contact />
                             </Wrapper>
                         </>
@@ -54,7 +54,7 @@ function App() {
                     <Route path='work' element={
                         <>
                             <VerticalSpacer />
-                            <Wrapper>
+                            <Wrapper mobileNavIsOpen={mobileNavIsOpen}>
                                 <Work />
                             </Wrapper>
                         </>
@@ -64,7 +64,7 @@ function App() {
                     <Route path='about' element={
                         <>
                             <VerticalSpacer />
-                            <Wrapper>
+                            <Wrapper mobileNavIsOpen={mobileNavIsOpen}>
                                 <About />
                             </Wrapper>
                         </>

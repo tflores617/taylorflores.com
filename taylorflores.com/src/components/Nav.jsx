@@ -64,7 +64,8 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                 <Link
                     to="work"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    onClick={toggleMobileNav}
+                    
+                    onClick={() => {toggleMobileNav();animateScroll.scrollToTop({duration: 1000, smooth:true}) }}
                 >
                     <span className="content-wrapper">MY WORK</span>
 
@@ -72,21 +73,21 @@ export default function Nav({ toggleMobileNav, mobileNavIsOpen }) {
                 <Link
                     to="about"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    onClick={toggleMobileNav}
+                    onClick={() => {toggleMobileNav();animateScroll.scrollToTop({duration: 1000, smooth:true}) }}
                 >
                     <span className="content-wrapper">ABOUT ME</span>
                 </Link>
-                <Link
+                {/* <Link
                     to="contact"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
                     onClick={toggleMobileNav}
                 >
                     <span className="content-wrapper">CONTACT ME</span>
-                </Link>
+                </Link> */}
                 <Link
                     to="/"
                     className='rounded-sm hover:cursor-pointer hover:bg-white hover:text-[#343434] hover:transition-all hover:underline h-16 flex justify-start pl-12 text-xl text-white'
-                    onClick={toggleMobileNav}
+                    onClick={() => {toggleMobileNav();animateScroll.scrollToTop({duration: 1000, smooth:true}) }}
                 >
                     <span className="content-wrapper">HOME</span>
 
